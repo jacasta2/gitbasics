@@ -202,3 +202,13 @@ Up to this point, you should have a **GitHub** repo and know how to push stuff t
 [How to create a pull request in GitHub](https://opensource.com/article/19/7/create-pull-request-github) by [Kedar Vijay Kulkarni](https://opensource.com/article/19/7/create-pull-request-github) shows an easy-to-follow guide for creating a pull request using **Git** and **GitHub**.  
 
 The only thing that wasn't working for me was the line `git commit -S -m "your-commit-message"`. I removed the `-S` option and voilà!
+
+## 'Accidentally' deleting files in GitHub...
+
+In a recent project I 'accidentally' deleted a file from **GitHub** (not locally) and found myself having issues pushing more stuff to the repo. I had to integrate such change (the deletion of the file) locally through the `git pull` command. Be careful when doing so since the command also deletes the local copy of the file.
+
+When you delete a file locally and want to push that change to **GitHub**, do the following:
+
+`git rm [path-to-file]`
+
+Then commit the change and push it to the repo.
