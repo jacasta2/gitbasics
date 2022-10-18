@@ -205,7 +205,7 @@ The only thing that wasn't working for me was the line `git commit -S -m "your-c
 
 ## 'Accidentally' deleting files in GitHub...
 
-In a recent project I 'accidentally' deleted a file from **GitHub** (not locally) and found myself having issues pushing more stuff to the repo. I had to integrate such change (the deletion of the file) locally through the `git pull` command. Be careful when doing so since the command also deletes the local copy of the file.
+In a recent project I 'accidentally' deleted a file from **GitHub** (not locally) and found myself having issues pushing more stuff to that project's repo. I had to integrate such change (the deletion of the file) locally through the `git pull` command. Be careful when doing so since the command also deletes the local copy of the file.
 
 When you delete a file locally and want to push that change to **GitHub**, do the following:
 
