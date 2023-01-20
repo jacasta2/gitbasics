@@ -160,6 +160,14 @@ Run `git status` and `git log` to check the work.
 
 # Other stuff (not in the video)
 
+## Undo git add
+
+`git restore --staged [path-to-file]`  
+
+ This command removes a file or folder from the staging area, making sure such file or folder is not part of a subsequent commit operation.  
+ 
+More details can be found in [How to Undo git add](https://www.git-tower.com/learn/git/faq/undo-git-add) by [Tower](https://www.git-tower.com/about-us/).  
+ 
 ## Undo the last commit
 
 `git reset [...]` undoes the last commit:  
