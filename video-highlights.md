@@ -160,14 +160,6 @@ Run `git status` and `git log` to check the work.
 
 # Other stuff (not in the video)
 
-## Undo git add
-
-`git restore --staged [path-to-file]`  
-
- This command removes a file or folder from the staging area, making sure such file or folder is not part of a subsequent commit operation.  
- 
-More details can be found in [How to Undo git add](https://www.git-tower.com/learn/git/faq/undo-git-add) by [Tower](https://www.git-tower.com/about-us/).  
- 
 ## Undo the last commit
 
 `git reset [...]` undoes the last commit:  
@@ -220,3 +212,33 @@ When you delete a file locally and want to push that change to **GitHub**, do th
 `git rm [path-to-file]`
 
 Then commit the change and push it to the repo.
+
+## Undo git add
+
+`git restore --staged [path-to-file]`  
+
+ This command removes a file or folder from the staging area, making sure such file or folder is not part of a subsequent commit operation.  
+ 
+More details can be found in [How to Undo git add](https://www.git-tower.com/learn/git/faq/undo-git-add) by [Tower](https://www.git-tower.com/about-us/).
+
+## Ignore files and folders
+
+The way to tell Git to ignore and not track specific files and folders is through the `.gitignore` file. This is a plain text file that contains a list of all files and folders from the project that Git should not track. This file is typically placed in the repo's root directory.
+
+For example, if you want to ignore a given file from the root directory, you would add the following in `.gitignore`:
+
+`/[name-of-file]`
+
+Not including the leading `/` will make Git to ignore any file named `[name-of-file]` anywhere in the repo.
+
+If the file is stored in a given folder at the root directory, you would add the following in `.gitignore`:
+
+`/[name-of-folder]/[name-of-file]`
+
+If you want to ignore a given folder (and all the content inside), you would add the following in `.gitignore`:
+
+`/[name-of-folder]/`
+
+Not including the leading `/` will make Git to ignore any folder named `[name-of-folder]` anywhere in the repo.
+
+More details can be found in [.gitignore File – How to Ignore Files and Folders in Git](https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/) by [Dionysia Lemonaki](https://www.freecodecamp.org/news/author/dionysia/).
