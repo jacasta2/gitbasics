@@ -1,6 +1,6 @@
 # Git
 
-The video by [Fazt](https://www.youtube.com/c/FaztTech) can be watched [here](https://www.youtube.com/watch?v=HiXLkL42tMU). It is in Spanish. If you don't understand Spanish, try to configure the video with auto-generated English subtitles.  
+The video by [Fazt](https://www.youtube.com/c/FaztTech) can be watched [here](https://www.youtube.com/watch?v=HiXLkL42tMU). It's in Spanish; if you can't follow it, configure the video with auto-generated English subtitles.  
 
 <span style="color:blue">2:50</span> --> What is Git  
 - Repository (repo)
@@ -40,7 +40,7 @@ Following the video, I worked with **Atom**.
 <span style="color:blue">18:15</span> --> `git add [path-to-file]`  
 
 <span style="color:blue">19:50</span> --> `git commit`  
-It shows an error since we haven't configured and user.  
+It shows an error since we haven't configured an user.  
 
 <span style="color:blue">20:30</span> --> `git config [...]`  
 
@@ -205,7 +205,7 @@ The only thing that wasn't working for me was the line `git commit -S -m "your-c
 
 ## 'Accidentally' deleting files in GitHub...
 
-In a recent project I 'accidentally' deleted a file from **GitHub** (not locally) and found myself having issues pushing more stuff to that project's repo. I had to integrate such change (the deletion of the file) locally through the `git pull` command. Be careful when doing so since the command also deletes the local copy of the file.
+In a recent project, I 'accidentally' deleted a file from **GitHub** (not locally) and found myself having issues pushing more stuff to that project's repo. I had to integrate such change (the deletion of the file) locally through the `git pull` command. Be careful when doing so since the command also deletes the local copy of the file.
 
 When you delete a file locally and want to push that change to **GitHub**, do the following:
 
